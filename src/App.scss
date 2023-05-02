@@ -1,0 +1,97 @@
+.App {
+  padding: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  touch-action: none;
+  .canvas {
+    width: 100%;
+    background-color: black;
+    touch-action: none;
+    z-index: 10;
+  }
+  .mainContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    .buttonContainer {
+      height: 10vh;
+      width: 100%;
+      cursor: pointer;
+      background-color: white;
+      color: yellow;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      button {
+        width: 20%;
+        height: 50%;
+        border-radius: 10px;
+        border: 2px solid rebeccapurple;
+        background-color: black;
+        color: snow;
+        cursor: pointer;
+        transition: scale 0.3s;
+      }
+      button:hover {
+        scale: 1.2;
+      }
+    }
+  }
+}
+.htmlInput {
+  // background-color: bisque;
+  color: snow;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  .inputContainer {
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .yContainer {
+    width: 50vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    h3 {
+      width: 30%;
+      margin: 0;
+    }
+    .horizontal-slider {
+      width: 70%;
+      border-radius: 10px;
+      height: 30px;
+      background-color: rebeccapurple;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .example-mark {
+      margin: 0;
+      height: 10px;
+      color: orange;
+    }
+    .example-thumb {
+      height: 90%;
+      width: 10%;
+      background-color: aliceblue;
+      border-radius: 10px;
+      color: black;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
